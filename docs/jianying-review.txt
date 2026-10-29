@@ -1,0 +1,64 @@
+INDEPENDENT REVIEW — MOM BITE 01 JIANYING EXPORT
+Review date: 2026-10-29
+
+Result: PASS for the portable package's inspected structure, content, media,
+and installer safeguards. No remaining blocking issue found in this review.
+Actual Jianying Desktop compatibility has NOT been established in this environment.
+
+Checked directly
+- Main draft: 60 seconds, 1080 x 1920, 24 fps, 15 tracks; 8 scene segments,
+  52 native text segments, 1 piano segment, and 7 transition-audio segments.
+- Smoke draft: 2 seconds; one video, one editable Vietnamese text, and one
+  transition-audio segment on three tracks.
+- Video target/source ranges match and cover the full timeline without seams.
+  Main cuts are at 0, 5, 13, 21, 30, 38, 46, 55, and 60 seconds.
+- Every segment's primary and extra material references resolve. The text speed
+  references missing from the initial export were corrected and rechecked.
+- All 52 editable-text metadata rows match native material text and frame ranges.
+  All five food names, nutrients, benefits, and safety messages from the shared
+  timeline are present, including cooked/low-mercury fish, fully cooked eggs,
+  folate not replacing recommended folic acid, fully cooked meat, pasteurized
+  dairy, the no-guaranteed-IQ statement, and clinician-directed supplements.
+- Piano spans 60 seconds at volume 0.65. Seven 16-frame transition cues sit at
+  the scene boundaries at volume 0.12. Audio is separate from the plate.
+- ffprobe confirms the main H.264 plate is silent, 60 seconds / 1440 frames,
+  1080 x 1920 at 24 fps. Bundled piano and transition media are readable stereo
+  48 kHz WAV files. Relative Resources paths resolve inside both draft folders.
+- Existing plate QA stills at frames 81, 250, 650, 1250, and 1401 were inspected:
+  main editable copy is absent; intended imagery, channel branding, AI disclosure,
+  and footer remain. VALIDATION.txt additionally records exact retained-pixel
+  comparisons against four original stills.
+- Both portable platform objects retain Jianying app_id 3704 / app_source lv;
+  device_id, hard_disk_id, and mac_address are empty. Portable draft JSON contains
+  no cloud workspace paths. Mac identity is resolved only on the recipient's
+  computer and is not fabricated when a usable local donor is missing.
+- install.py, both adapters, launchers, and HUONG-DAN.txt were inspected. Python
+  3.10+ is documented and checked before adapter imports. The Mac launchers pass
+  bash syntax checks. Instructions correctly target Chinese Jianying Desktop.
+- New install names avoid disk and Mac-registry title collisions. An independent
+  simulated Mac install preserved an existing registry entry stored under a
+  different folder name and its sentinel file. Existing drafts are not selected
+  for replacement through the supplied installer.
+- Mac registration uses draft_info.json, local donor platform metadata, media
+  registration, final resource paths, and actual staged-media byte counts.
+  The running-app check uses an exact process name, avoiding donor-path matches.
+- The updated VALIDATION.txt records successful simulated Windows duplicate and
+  smoke installation, running-app refusal, Mac registration/title preservation,
+  donor-path process matching, and explicit failure without a local donor.
+
+Limits and recipient acceptance
+- No Windows/Mac Jianying application was available. Opening the draft, editing,
+  playback, SFX perception/synchronization, and rendering were not tested in the
+  actual application. Filesystem simulations are not desktop compatibility tests.
+- Native font choice, text geometry, background shapes, and fade appearance are
+  approximate and unverified in Jianying. Included Noto Sans fonts can be selected
+  locally; font size and position may need adjustment. The guide states this.
+- Use the included smoke project first on the recipient machine, then test one
+  text edit, one scene speed change, and a short export before editing the main
+  project. Mac installation deliberately stops if no usable local plaintext donor
+  is available. An installed Mac draft can contain that machine's identifiers and
+  should not be redistributed; retain the original device-neutral ZIP.
+- Windows launcher execution and macOS Finder launching were inspected statically,
+  not executed on their respective operating systems.
+
+Review modified only this report; production fixes were made by the exporter owner.

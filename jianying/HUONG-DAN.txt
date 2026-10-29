@@ -1,0 +1,54 @@
+MOMBITE 01 — DỰ ÁN JIANYING CÓ THỂ CHỈNH SỬA
+
+Video dọc 1080 × 1920, 24 fps, 60 giây; 8 cảnh.
+Đây là dự án cho Jianying Desktop (剪映 chuyên nghiệp, bản Trung Quốc).
+Không cam kết dùng được trong CapCut quốc tế hoặc CapCut/Jianying điện thoại.
+
+CÓ THỂ CHỈNH:
+- Tiêu đề, dưỡng chất, lợi ích và lưu ý an toàn: chữ gốc trên các lớp riêng.
+- Từng cảnh: kéo, xóa, đổi thứ tự, thay tốc độ hoặc chỉnh màu.
+- Nhạc piano và 7 âm chuyển cảnh: các lớp âm thanh riêng để thay/xóa/đổi âm lượng.
+
+GIỮ TRONG VIDEO NỀN:
+- Ảnh AI, chuyển động máy quay, logo/nhãn kênh, nhãn minh họa AI và dòng chân trang.
+- Bản này chưa có giọng đọc. Có kèm lời thoại và phụ đề để bạn tự thu/thêm giọng.
+- Chữ native và hiệu ứng mờ vào/ra là bản gần đúng của Remotion, không cam kết khớp
+  từng pixel. Nét gạch chân động ở mở đầu không đưa vào lớp chữ native.
+
+CÁCH MỞ TRÊN WINDOWS (cần Python 3.10 trở lên):
+1. Giải nén toàn bộ ZIP. Không mở dự án khi tài nguyên còn trong file ZIP.
+2. Thoát hoàn toàn Jianying. Xem Draft location trong cài đặt nếu dùng đường dẫn riêng.
+3. Mở Terminal trong thư mục vừa giải nén và chạy:
+     py -3 install.py --smoke
+   Mở Jianying, kiểm tra dự án MomBite01-SmokeTest: thấy hình, chữ tiếng Việt sửa được,
+   nghe được âm chuyển cảnh. Đây là bước kiểm tra tương thích trên máy bạn.
+4. Thoát Jianying, chạy:
+     py -3 install.py
+   Sau đó mở dự án MomBite01-Editable.
+   Nếu không thấy thư mục dự án mặc định, thêm:
+     --draft-root "đường dẫn Draft location"
+5. Thử sửa một chữ, thay màu, đổi tốc độ một cảnh, rồi xuất thử vài giây.
+
+MAC (cần Python 3.10 trở lên):
+- Các lệnh tương tự, thay `py -3` bằng `python3`.
+- Bộ chuyển đổi Mac sử dụng thông tin nền tảng từ một dự án JSON chưa mã hóa
+  trên chính máy của bạn. Không lấy định danh máy từ môi trường đám mây.
+- Nếu không tìm được dự án phù hợp, bộ cài dừng rõ ràng; dùng:
+     python3 install.py --smoke --donor "/đường/dẫn/dự/án/chưa/mã/hóa"
+  Chúng tôi không có Mac/Jianying trong môi trường này để xác nhận mở thực tế.
+- Bản Mac đã cài có thể chứa định danh thiết bị của chính máy bạn; không gửi lại
+  thư mục đã cài cho người khác. ZIP gốc này không chứa các định danh đó.
+
+LƯU Ý KHI CHỈNH:
+- Bộ cài tạo dự án mới, không ghi đè dự án đã có. Có thể thêm hậu tố nếu trùng tên.
+- Khi đổi thứ tự cảnh, chọn cả đoạn video VÀ các lớp chữ/âm tương ứng để kéo cùng nhau.
+- Thư mục Fonts có Noto Sans và giấy phép. Có thể cài font và chọn lại trong Jianying
+  để chữ gần bản gốc hơn; chỉnh cỡ/vị trí nếu phiên bản ứng dụng hiển thị khác.
+- Không che dòng an toàn thực phẩm bằng caption hoặc các nút tương tác khi đăng.
+- Jianying mới có thể mã hóa bản lưu. Giữ ZIP này để tạo bản mới; không cần đọc ngược
+  bản đã mã hóa. Dùng Save as/nhân bản trong ứng dụng để giữ các chỉnh sửa của bạn.
+- Đã kiểm tra cấu trúc JSON, thời lượng và tài nguyên trên Linux; chưa mở/biên tập/xuất
+  trực tiếp bằng Jianying Windows/Mac. Tương thích thực tế cần bước smoke ở trên.
+
+KIỂM TRA GÓI MÀ KHÔNG CÀI:
+  python3 install.py --validate-only

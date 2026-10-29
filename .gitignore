@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+out/
+__pycache__/
+*.py[cod]
+.cache/
+.npm-cache/
+.pip-cache/
+.DS_Store
+.env
+.env.*
+!.env.example

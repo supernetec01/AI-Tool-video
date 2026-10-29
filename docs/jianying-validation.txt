@@ -1,0 +1,8 @@
+PASS MomBite01-Editable: timeline, native text, material references, safe portable paths, device-neutral metadata
+PASS MomBite01-SmokeTest: timeline, native text, material references, safe portable paths, device-neutral metadata
+PASS clean plate: retained photo/brand pixels exactly match 4 original stills; native text region empty
+PASS simulated Windows filesystem flow: media rebound inside draft; duplicate install preserves first; smoke install; running-app guard
+PASS simulated Mac filesystem flow: local platform injection/registry/media registration; missing donor fails explicitly
+PASS Mac registry title collision: old title in UUID folder remains registered and its contents preserved
+PASS Mac process-name guard ignores installer command-line arguments containing JianyingPro
+LIMIT: no actual Jianying Windows/Mac application available. Native font geometry, app opening, editing and export must be checked with the included smoke project on the recipient machine.
